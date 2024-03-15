@@ -2,32 +2,166 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  scroll-behavior: smooth;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+*::-webkit-scrollbar {
+  display: none;
+}
+.navbar {
+  background: rgba(51, 51, 51, 0.635);
+  position: fixed;
+  top: 0;
+}
+.mobile_nav {
+  background-image: url(../public/HeroBackground.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.hero_parent {
+  background: url(../public/HeroBackground.png);
+  background-size: cover;
+  height: 100vh;
+}
+.mainTop {
+  background: url(../public/opacityBackground.png);
+  height: 150vh;
+  background-position: center;
+}
+.main {
+  background: url(../public/MainBackground.png);
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+.card_parent {
+  background: rgba(0, 0, 0, 0.444);
+  height: 45vh;
+  padding: 30px;
+  border-radius: 50px;
+}
+.Main_Car {
+  background: url(../public/CarBackground.png);
+  height: 80vh;
+}
+.City {
+  background: url(../public/HeroBackground.png);
+  height: 40vh;
+  background-size: cover;
+}
+.City input {
+  padding: 10px;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.444);
+}
+.Footer {
+  background: url(../public/CarBackground.png);
+}
+.Second_Hero {
+  background: url(../public/Second/HeroBackground.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.SecondHero {
+  background: url(../public/CarBackground.png);
+  height: 80vh;
+}
+.Second_Texts {
+  background: rgba(61, 61, 61, 0.444);
+  padding: 20px;
+  border-radius: 60px;
+}
+.SecondMain {
+  background: url(../public/Second/SecondMain.png);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Accordion {
+  background: url(../public//Second/Accoridon.png);
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ThirdHero {
+  background: url(../public/Third/HeroBackground.png);
+  height: 100vh;
+  background-size: cover;
+}
+.ThirdMain {
+  background-image: url(../public/opacityBackground.png);
+  height: 100vh;
+}
+.ThirdCity {
+  background: url(../public/Third/HeroBackground.png);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+.ThirdCity input {
+  padding: 10px;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.444);
+}
+.opacity {
+  background: rgba(0, 0, 0, 0.444);
+}
+.FourthHero {
+  background: url(../public/Third/FourthBackground.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.FourthMain {
+  background: url(../public/CarBackground.png);
+}
+.FourthMainText {
+  background: url(../public/Third/FourthMain.png);
+  height: 60vh;
+}
+.border {
+  border: 2px solid white;
+}
+@media (max-width: 900px) {
+  .card_parent {
+    height: 100%;
+    background: transparent;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .Main_Car {
+    height: 100%;
+  }
+  .City {
+    height: 100%;
+  }
+  .Footer {
+    height: 100%;
+  }
+  .main {
+    height: 115vh;
+  }
+  .SecondMain {
+    height: 100%;
+  }
+  .SecondHero {
+    height: 100%;
+  }
+  .FourthMainText {
+    height: 100%;
+    padding: 20px;
+  }
+  .FourthMain {
+    padding: 20px;
+  }
+  .Accordion {
+    height: 150%;
+  }
+  .ThirdCity {
+    height: 100%;
+    padding: 10px !important;
   }
 }
